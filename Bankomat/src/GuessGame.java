@@ -62,7 +62,7 @@ public class GuessGame {
     public static void pssGame() {
         Scanner scanner2 = new Scanner(System.in);
         while (true) {
-            String [] rps = {"r", "p", "s"};
+            String[] rps = {"r", "p", "s"};
             String computerMove = rps[new Random().nextInt(rps.length)];
 
             String playerMove;
@@ -70,11 +70,15 @@ public class GuessGame {
             while (true) {
                 System.out.println("Enter your move");
                 playerMove = scanner2.nextLine();
-                if (playerMove.equals("r") ||playerMove.equals("p") || playerMove.equals("s"));
+                if (playerMove.equals("r") || playerMove.equals("p") || playerMove.equals("s")) ;
                 break;
             }
             System.out.println(playerMove + " is not a valid move");
-        } 
+
+            System.out.println(scanner2);
+        }
+
+
 
     }
 
